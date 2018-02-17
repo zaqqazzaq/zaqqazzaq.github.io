@@ -1,16 +1,57 @@
 <!Doctype html>
 <html>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="video player" href="javascript.css" />
     <head>
         
     </head>
+   
+    <!-- The video -->
+    
+    <video autoplay muted loop id="myVideo">
+      <source src="kid flash gonna go far kid.mp4" type="video/mp4">
+    </video>
+    
+    <div class="content">
+      <h1><font color = "red">W</font>
+      <font color = "yellow">E</font>
+      <font color = "red">L</font>
+      <font color = "yellow">C</font>
+      <font color = "red">O</font>
+      <font color = "yellow">M</font>
+      <font color = "red">E</font></h1>
+      <p>Welcome to the Kid Flash Memorium.</p>
+      <p>Scroll down to see interesting facts and more.</p>
+      <!-- Use a button to pause/play the video with JavaScript -->
+      <button id="myBtn" onclick="myFunction()">Pause</button>
+    </div>
     <body>
-        <h1> KID FLASH </h1>
+        
         <img class = "main" src = "https://geekfeminismdotorg.files.wordpress.com/2013/11/youngjustice-kidflash1.jpg">
+        <p></p>
         <img class = "group" src = "https://nerdist.com/wp-content/uploads/2017/04/QCSnHgW.jpg">
+        <p></p>
         <img class = "cool" src = "https://vignette.wikia.nocookie.net/theflashzoom/images/c/cf/Kid_Flash.png/revision/latest?cb=20130301044456">
-        <p> Member of the JLA, apprentice to the Flash, coolest sidekick </p>
-        <p>"Souvenir!"</p>
+        <font color = "blue"><p> Member of the JLA, apprentice to the Flash, coolest sidekick </p> </font>
+        <font color = "red"><p>"Souvenir!"</p></font>
         
     </body>
+    <script>
+    // Get the video
+    var video = document.getElementById("myVideo");
+
+    // Get the button
+    var btn = document.getElementById("myBtn");
+
+    // Pause and play the video, and change the button text
+    function myFunction() {
+        if (video.paused) {
+            video.play();
+            btn.innerHTML = "Pause";
+        } else {
+            video.pause();
+            btn.innerHTML = "Play";
+        }
+    }
+    </script>
 </html>
