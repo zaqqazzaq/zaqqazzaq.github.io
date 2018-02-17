@@ -1,0 +1,18 @@
+img {
+    width: 200px;
+}
+body {
+    text-align: center;
+    font-family: "Times New Roman";
+}
+.main {
+    width: 200px;
+    text-align: center;
+}
+.group {
+    width: 400px;
+    text-align: right;
+}
+.cool {
+    width: 300px;
+}
